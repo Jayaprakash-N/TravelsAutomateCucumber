@@ -53,13 +53,14 @@ public class TestLogin {
 	}
 
 
-	@When("I fill in {string} with {string}")
-	public void fillLogin(String Username, String Password) {
+	@When("I fill in Email with {string} and Password with {string}")
+	public void fillLoginDetails(String Username, String Password) {
 		Uname=Username;
 		Paswd=Password;
 		lgn =new Login(driver);
-		lgn.setLogin(Username, Password);
+		lgn.setLogin(Uname, Paswd);
 	}
+
 
 	@And("I click on the Log In button")
 	public void clickLogin() {

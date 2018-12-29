@@ -1,0 +1,383 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Navigate to Login Screen",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14524930591,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to \"https://www.phptravels.net/login\" Login Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.phptravels.net/login\"",
+                  "offset": 12
+                }
+              ],
+              "location": "TestLogin.navigateLogin(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15346209,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see Login Page",
+            "match": {
+              "location": "TestLogin.validateLogin_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4801523,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestLogin.setupLogin()"
+            }
+          },
+          {
+            "result": {
+              "duration": 535680,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestRegister.setupRegister()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-functionality;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 3328840402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestLogin.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 563245718,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in Email with \"retest@gmail.com\" and Password with \"test123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"retest@gmail.com\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"test123\"",
+                  "offset": 58
+                }
+              ],
+              "location": "TestLogin.fillLoginDetails(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1257853453,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the Log In button",
+            "match": {
+              "location": "TestLogin.clickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35624128,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the \"My Account\" page on URL \"https://www.phptravels.net/account/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Account\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"https://www.phptravels.net/account/\"",
+                  "offset": 37
+                }
+              ],
+              "location": "TestLogin.My_Account_Login(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "Description: Login to the PHPTravels web site",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Navigate to Register Screen",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11570638383,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to \"https://www.phptravels.net/register\" Signup Screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.phptravels.net/register\"",
+                  "offset": 12
+                }
+              ],
+              "location": "TestRegister.navigateSignup(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30589295,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see Sign Up Page",
+            "match": {
+              "location": "TestRegister.validateSign_Up_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 536613,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestLogin.setupLogin()"
+            }
+          },
+          {
+            "result": {
+              "duration": 286505,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestRegister.setupRegister()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Register with User details",
+        "description": "",
+        "id": "register-user;register-with-user-details",
+        "after": [
+          {
+            "result": {
+              "duration": 183381,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestLogin.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 112995376,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill in First Name with \"Test_First\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test_First\"",
+                  "offset": 26
+                }
+              ],
+              "location": "TestRegister.setFirst_Name(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123757973,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in Last Name with \"Test_Last\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test_Last\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TestRegister.setLast_Name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70859561,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I fill in Mobile Number with \"789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"789\"",
+                  "offset": 29
+                }
+              ],
+              "location": "TestRegister.setMobile_Number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91683427,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I fill in Email with \"test@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "TestRegister.setEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158989674,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I fill in Password with \"test123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "TestRegister.setPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51251242,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill in Confirm Password with \"test123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test123\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TestRegister.setConfirm_Password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 328580494,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on the Sign Up button",
+            "match": {
+              "location": "TestRegister.clickSign_Up_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [true] but found [false],\n\texpected [true] but found [false]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)\r\n\tat stepdefinition.TestRegister.My_Account_Register(TestRegister.java:102)\r\n\tat ✽.user should be created and should be on the \"My Account\" page on URL \"https://www.phptravels.net/account/\"(src/test/resources/Feature/Register.feature:16)\r\n",
+              "duration": 22670748,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "user should be created and should be on the \"My Account\" page on URL \"https://www.phptravels.net/account/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Account\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"https://www.phptravels.net/account/\"",
+                  "offset": 69
+                }
+              ],
+              "location": "TestRegister.My_Account_Register(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register User",
+    "description": "Description: Register user to the travels web site",
+    "id": "register-user",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/Register.feature",
+    "tags": []
+  }
+]

@@ -1,20 +1,14 @@
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+package stepdefinition;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
-import cucumber.api.testng.CucumberFeatureWrapper;
-import cucumber.api.testng.PickleEventWrapper;
-import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-        features = "src/test/resources/Feature",
-        glue = {"src/test/java/stepdefinition"},
-        plugin = "json:target/cucumber-report.json"
+        features = "src\\test\\resources\\Feature",
+        plugin = { "pretty", "html:target/site/cucumber-pretty", "json:src/test/resources/json/cucumber.json" }
         )
-public class TestRunner extends AbstractTestNGCucumberTests  {
+public class TestRunner extends AbstractTestNGCucumberTests
+{
 	/*
 	private TestNGCucumberRunner testNGCucumberRunner;
 
