@@ -1,0 +1,4 @@
+propertyReader\PropertiesLoad.class
+stepdefinition\TestRegister.class
+stepdefinition\TestLogin.class
+TestRunner.class
